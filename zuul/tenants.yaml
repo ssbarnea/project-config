@@ -46,9 +46,6 @@
           - ansible-collections/vmware_rest_code_generator
           - ansible-collections/vyos.vyos
           - ansible-community/ansible-bender
-          - ansible-community/molecule
-          - ansible-community/molecule-libvirt
-          - ansible-community/molecule-vagrant
           - ansible/network
           - ansible-network/arista_eos
           - ansible-network/aws
@@ -122,7 +119,10 @@
               - vmware/govmomi
 
       github-3pci:
-        untrusted-projects: []
+        untrusted-projects:
+          - ansible-community/molecule
+          - ansible-community/molecule-libvirt
+          - ansible-community/molecule-vagrant
 
       opendev.org:
         untrusted-projects:
